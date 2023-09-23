@@ -19,10 +19,7 @@ Following the lab, you should be able to:
 
 At the start of
 each project, you may find a team member by yourself or may be randomly paired up with another student by
-a lab instructor.  One of you will be designated the *driver* 
-and the other the *navigator*. If you prefer to work on this project by yourself, that is fine too.  
-Each week you should try to alternate: if you were a driver 
-last week, be a navigator next, etc. 
+a lab instructor.  One of you will be designated the *driver* and the other the *navigator*. If you prefer to work on this project by yourself, that is fine too.  Each week you should try to alternate: if you were a driver last week, be a navigator next, etc. 
 
 
 ## 1. Getting Started
