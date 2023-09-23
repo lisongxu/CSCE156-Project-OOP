@@ -147,7 +147,7 @@ You are free to define and write more methods and/or classes to handle account l
     * The `TextArtPost` class should have its own data field to store the no of the text art chosen by a user. 
 
 
-* Both the `TextPost` and `TextArtPost` classes implement interface `PostContentFormatter` to implement the `getFormattedContent()` method, which `Views.viewPost()` in the Post View Window calls to display each post in the exptected format. 
+* Both the `TextPost` and `TextArtPost` classes implement interface `PostContentFormatter` to implement the `getFormattedContent()` method, which `Views.viewPost()` in the *Post View Window* calls to display each post in the approriate format. 
 
 
 * Please use a `HashMap` variable `accounts` to keep track of all account information. For each key-value pair, 
@@ -161,31 +161,35 @@ the key is the account username, and the value is the corresponding account. For
 
 ### 4.1 Grading by LAs
 
-* (10 points) The `Account` class must have 3 (or more) private data fields: `private String userName`, `private String password`, and `private String phoneNumber` and the corresponding public getter methods. 
+* (5 points) The `Account` class must have 3 (or more) private data fields: `private String userName`, `private String password`, and `private String phoneNumber` and the corresponding public getter methods. 
 
-* (10 points) Both the `TextPost` and `TextArtPost` classes (not necessarily correctly) implement the `getFormattedContent()` method.
+* (5 points) Both the `TextPost` and `TextArtPost` classes (not necessarily correctly) implement the `getFormattedContent()` method.
+
+* (5 points) A `HashMap` variable `accounts` is used to keep track of all account information
+
+* (5 points) An `ArrayList<Post>` variable `postList` is used to store all the posts. 
   
-* (10 points) Can successfully create a new account (username=Alice, password=pass123), and then successfully log into the account.
+* (10 points) A user can successfully create a new account (username=Alice, password=pass123), and then successfully log into the account.
 
-* (10 points) Alice can successfully create a new text post.
+* (10 points) Alice can then successfully create a new text post and the *Post View Window* correctly shows the post in the approriate format as demonstarted above.
 
-* (10 points) Alice can successfully create a new text art post.
+* (10 points) Alice can then successfully create a new text art post and the *Post View Window* correctly shows the post in the approriate format as demonstrated above.
 
-* (10 points) When logging using username=Bob (not created yet), correctly reports failed login.
+* (10 points) The Post View Window correctly shows these two posts in the descending order of their times.
 
-* (10 points) Can successfully create another new account (username=Bob, password=pass456), and then successfully log into the account.
+* (10 points) When logging using username=Bob (not created yet), it correctly reports failed login.
 
-* (10 points) Bob can successfully create a new text post
+* (10 points) A user can successfully create another new account (username=Bob, password=pass456), and then successfully log into the account.
 
-* (10 points) Bob can successfully create a new text art post
+* (10 points) Bob can then successfully create a new text post and a new text art post.
 
-* (10 points) The Post View Window correctly shows all the posts in the descending order of their times.
+* (10 points) The *Post View Window* correctly shows all the posts in the descending order of their times.
 
 
 ### 4.2 Submitting to Canvas
 
 
-Submit all Java source code to Canvas (not CodePost). Our LAs will manually grade them. You are welcome to demonstrate how your Jstgram works to our LAs.  
+Submit all Java source code to Canvas (not CodePost). Our LAs will manually grade them. You are welcome to demonstrate how your Jstgram works to our LAs, and they can then give your feedbacks and grade your project.  
 
 Note that, each student must submit the code to Canvas for grading.
 
