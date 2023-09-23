@@ -73,7 +73,7 @@ If the typed username and password match with an existing account,  this account
 
 ### 2.4 Post View Window
 
-The *Post View Window* lists all the past posts (by all accounts) in the descending order of the time, and then asks the user to logout the current account, or create a new post, or quit the application. Below shows a possible *Post View Window* with a total of 4 posts. This window is displayed by calling `Views.postViewWindow()`.
+The *Post View Window* lists all the past posts (by all accounts) in the descending order of the time, and then asks the user to create a new post, logout the current account, or quit the application. Below shows a possible *Post View Window* with a total of 4 posts. This window is displayed by calling `Views.postViewWindow()`.
 
 
 <p align="center">
