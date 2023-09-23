@@ -45,7 +45,7 @@ When Jstgram starts, it should display the *Main Window* as shown below. This wi
 <img src="images/main_win.png" alt="Main Window" width="30%"/>
 </p>  
 
-It reads the user input from the keyboard, and then goes to the *Account Login Window* or the *Account Registration Window*, or quits the application.
+It reads the user input from the keyboard, and then goes to the *Account Registration Window* or the *Account Login Window*, or quits the application.
 
 ### 2.2 Account Registration Window
 
