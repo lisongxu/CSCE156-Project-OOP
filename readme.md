@@ -130,7 +130,7 @@ You will write and complete the following partially complete classes
 * the `TextArtPost` class
 * the `Main` class, which is the class to run the application
 
-You are free to define and write more classes and/or methods to handle account login, handle account registration, create new post, and list current posts.
+You are free to define and write more methods and/or classes to handle account login, handle account registration, create new post, and list past posts.
 
 ### 3.2 Class Requirements
 
