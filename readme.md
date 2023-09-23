@@ -9,7 +9,7 @@ at the [University of Nebraska-Lincoln](https://unl.edu).
 
 ### Lab Objectives & Topics
 Following the lab, you should be able to:
-* use Classes and objects to write Java programs
+* use classes and objects to write Java programs
 * understand Inheritance and design classes and subclasses in Java
 * understand and use interfaces and abstract classes in Java
 * understand polymorphism in Java
