@@ -81,8 +81,8 @@ The *Post View Window* lists all the past posts (by all accounts) in the descend
 </p>  
 
 After reading the user input, Jstgram 
-* logs out the current account and goes back to the *Main Window*
-* or goes to the *New Post Window* to create a new post
+* goes to the *New Post Window* to create a new post
+* or logs out the current account and goes back to the *Main Window*
 * or quits the application. 
 
 
