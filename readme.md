@@ -182,7 +182,7 @@ the key is the account username, and the value is the corresponding account. For
 
 * (10 points) Bob can successfully create a new text art post
 
-* (10 points) The Post View Window correctly show. all the posts in the descending order of their times.
+* (10 points) The Post View Window correctly shows all the posts in the descending order of their times.
 
 
 ### 4.2 Submitting to Canvas
