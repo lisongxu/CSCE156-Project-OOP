@@ -137,7 +137,7 @@ You are free to define and write more methods and/or classes to handle account l
 * The `Account` class must have 3 (or more) private data fields: `private String userName`, `private String password`, and `private String phoneNumber` and the corresponding public getter methods. 
 
 
-* Both the `TextPost` and `TextArtPost` classes extend abstract class `Post` and implement interface `PostContentFormatter`. Their relation is shown in the following UML diagram [Generated using PlantUML Plugin for Eclispse](https://github.com/cbourke/ComputerScienceII/blob/master/resources/uml.md).
+* Both the `TextPost` and `TextArtPost` classes extend abstract class `Post` and implement interface `PostContentFormatter`. Their relation is shown in the following UML diagram ([Generated using PlantUML Plugin for Eclispse](https://github.com/cbourke/ComputerScienceII/blob/master/resources/uml.md)).
 <p align="center">
 <img src="images/post_uml.png" alt="UML of Post Classes" width="50%"/>
 </p>  
