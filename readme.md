@@ -171,11 +171,11 @@ the key is the account username, and the value is the corresponding account. For
   
 * (10 points) A user can successfully create a new account (username=Alice, password=pass123), and then successfully log into the account.
 
-* (10 points) Alice can then successfully create a new text post and the *Post View Window* correctly shows the post in the approriate format as demonstarted above.
+* (10 points) Alice can then successfully create a new text post and the *Post View Window* correctly shows the post in the appropriate format as demonstarted above.
 
-* (10 points) Alice can then successfully create a new text art post and the *Post View Window* correctly shows the post in the approriate format as demonstrated above.
+* (10 points) Alice can then successfully create a new text art post and the *Post View Window* correctly shows the post in the appropriate format as demonstrated above.
 
-* (10 points) The Post View Window correctly shows these two posts in the descending order of their times.
+* (10 points) The *Post View Window* correctly shows these two posts in the descending order of their times.
 
 * (10 points) When logging using username=Bob (not created yet), it correctly reports failed login.
 
