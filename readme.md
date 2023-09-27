@@ -185,6 +185,12 @@ the key is the account username, and the value is the corresponding account. For
 
 * (10 points) The *Post View Window* correctly shows all the posts in the descending order of their times.
 
+* (Bonus 25 points) Add the following features to the *Main Window*
+    * Save all accounts to a file
+    * Load the accounts from a file
+    * Save all posts to a file
+    * Load the posts from a file  
+
 
 ### 4.2 Submitting to Canvas
 
