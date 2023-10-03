@@ -147,7 +147,7 @@ You are free to define and write more methods and/or classes to handle account l
     * The `TextArtPost` class should have its own data field to store the no of the text art chosen by a user. 
 
 
-* Both the `TextPost` and `TextArtPost` classes implement interface `PostContentFormatter` to implement the `getFormattedContent()` method, which `Views.viewPost()` in the *Post View Window* calls to display each post in the approriate format. 
+* Both the `TextPost` and `TextArtPost` classes implement interface `PostContentFormatter` to override the `getFormattedContent()` method, which `Views.viewPost()` in the *Post View Window* calls to display each post in the approriate format. 
 
 
 * Please use a `HashMap` variable `accounts` to keep track of all account information. For each key-value pair, 
