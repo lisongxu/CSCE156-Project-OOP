@@ -163,7 +163,7 @@ the key is the account username, and the value is the corresponding account. For
 
 * (5 points) The `Account` class must have 3 (or more) private data fields: `private String userName`, `private String password`, and `private String phoneNumber` and the corresponding public getter methods. 
 
-* (5 points) Both the `TextPost` and `TextArtPost` classes (not necessarily correctly) implement the `getFormattedContent()` method.
+* (5 points) Both the `TextPost` and `TextArtPost` classes (not necessarily correctly) override the `getFormattedContent()` method.
 
 * (5 points) A `HashMap` variable `accounts` is used to keep track of all account information
 
