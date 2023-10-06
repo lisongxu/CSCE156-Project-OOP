@@ -193,7 +193,7 @@ the key is the account username, and the value is the corresponding account. For
 ### 4.2 Submitting to Canvas
 
 
-Submit all Java source code to Canvas (not CodePost). Our LAs will manually grade them. You are welcome to demonstrate how your Jstgram works to our LAs, and they can then give you their feedbacks and grade your project.  
+Submit all Java source code in a zip file to Canvas (not CodePost). Our LAs will manually grade them. You are welcome to demonstrate how your Jstgram works to our LAs, and they can then give you their feedbacks and grade your project.  
 
 Note that, each student must submit the code to Canvas for grading.
 
