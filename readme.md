@@ -1,7 +1,7 @@
 # Computer Science II
 ## Project - OOP
 
-This is a project used in Computer Science II (CSCE 156) for Fall 2023 
+This is a project used in Computer Science II (CSCE 156) for Fall 2024 
 in the [School of Computing](https://computing.unl.edu) 
 at the [University of Nebraska-Lincoln](https://www.unl.edu).
 
@@ -10,16 +10,16 @@ at the [University of Nebraska-Lincoln](https://www.unl.edu).
 ### Lab Objectives & Topics
 Following the lab, you should be able to:
 * use classes and objects to write Java programs
-* understand Inheritance and design classes and subclasses in Java
+* understand inheritance and design classes and subclasses in Java
 * understand and use interfaces and abstract classes in Java
 * understand polymorphism in Java
 
 
 ### Peer Programming Pair-Up
 
-At the start of
-each project, you may find a team member by yourself or may be randomly paired up with another student by
-a lab instructor.  One of you will be designated the *driver* and the other the *navigator*. If you prefer to work on this project by yourself, that is fine too.  Each week you should try to alternate: if you were a driver last week, be a navigator next, etc. 
+At the beginning of each project, you may find a team member on your own.  Please ***sign
+up for a group on Canvas*** (`People` then `Groups`), and only one member of your group needs to
+submit your project on Canvas. If you prefer to work on this project by yourself, that is fine too.
 
 
 ## 1. Getting Started
@@ -192,10 +192,23 @@ the key is the account username, and the value is the corresponding account. For
 
 ### 4.2 Submitting to Canvas
 
+Submit the following to Canvas (not GradeScope). Our LAs will manually grade them. You are welcome to demonstrate how your Jstgram works to our LAs, and they can then give you their feedbacks and grade your project.
 
-Submit all Java source code in a zip file to Canvas (not CodePost). Our LAs will manually grade them. You are welcome to demonstrate how your Jstgram works to our LAs, and they can then give you their feedbacks and grade your project.  
+1. `Project1.jar`: Follow the instructions below to generate a runnable JAR file that the LAs can execute.
+   *  Step 1: Run your project at least once (creates a `Launch Configuration` for step 4)
+   *  Step 2: Right click your project, and select `Export ...`
+   *  Step 3: In the Java folder, select `Runnable JAR file`
+   *  Step 4: In the `Runnable JAR File Specification`
+       * select your project in `Lanuch Configuration`
+       * change file name to `Project1.jar` in `Export destination`
+       * select `Package required libraries into generated JAR` for `Library handling`
+       * then click the `Finish` button
 
-Note that, each student must submit the code to Canvas for grading.
+2. `Project1.zip`: A Zip file of all source code that the LAs can execute and check.
+
+Again, if you plan to work with one other student in this project, please sign
+up for a group on Canvas (`people` then `Groups`), and only one member of your group needs to
+submit your project on Canvas.
 
 
 ## Credit
