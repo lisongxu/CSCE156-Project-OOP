@@ -42,7 +42,7 @@ In this project, we will design and develop a simple social media application us
 When Jstgram starts, it should display the *Main Window* as shown below. This window is displayed by calling `Views.mainWindow()` in the provided `Views` class.
 
 <p align="center">
-<img src="images/main_win.png" alt="Main Window" width="30%"/>
+<img src="images/main_win.png" alt="Main Window" width="50%"/>
 </p>  
 
 It reads the user input from the keyboard, and then goes to the *Account Registration Window* or the *Account Login Window*, or quits the application.
@@ -52,7 +52,7 @@ It reads the user input from the keyboard, and then goes to the *Account Registr
 The *Account Registration Window* is demonstrated below. It asks the user for the account information, and you may creatively ask for more information, such as email and job. This window is displayed by calling `Views.accountRegistrationWindow()`.
 
 <p align="center">
-<img src="images/user_registration_win.png" alt="User Registration Window" width="30%"/>
+<img src="images/user_registration_win.png" alt="User Registration Window" width="50%"/>
 </p>  
  
 After creating an account, Jstgram goes back to the *Main Window* so that a user can login or create other new accounts.
@@ -64,8 +64,8 @@ The *Account Login Window* with successful login and failed login are demonstrat
 
 
 <p align="center">
-<img src="images/login_win_succ.png" alt="Login" width="30%"/> 
-<img src="images/login_win_failed.png" alt="Login" width="30%"/>
+<img src="images/login_win_succ.png" alt="Login" width="45%"/> 
+<img src="images/login_win_failed.png" alt="Login" width="45%"/>
 </p>  
 
 If the typed username and password match with an existing account,  this account is the current account and Jstgram goes to the *Post View Window* for the account; otherwise, it goes to the *Main Window*. Note that, at any time, there is at most one current account. 
@@ -77,7 +77,7 @@ The *Post View Window* lists all the past posts (by all accounts) in the descend
 
 
 <p align="center">
-<img src="images/post_view_win.png" alt="Post View" width="30%"/>
+<img src="images/post_view_win.png" alt="Post View" width="50%"/>
 </p>  
 
 After reading the user input, Jstgram 
@@ -92,20 +92,20 @@ After reading the user input, Jstgram
 The *New Post Window* is shown below, where a user can choose to create either a text post or a text art post. This window is displayed by calling `Views.newPostWindow()`.
 
 <p align="center">
-<img src="images/new_post_win.png" alt="New Post" width="30%"/>
+<img src="images/new_post_win.png" alt="New Post" width="50%"/>
 </p>  
 
 
 Below is a demonstration where a user selects `T` and then types a text post.
 
 <p align="center">
-<img src="images/txt_post.png" alt="New txt Post" width="30%"/>
+<img src="images/txt_post.png" alt="New txt Post" width="50%"/>
 </p>  
 
 Below is a demonstration where a user selects `A` and then chooses no 1 in the 4 predefined text art options. These text art options are defined as a `List<String[]>` constant `OPTIONS` in class `TextArtPost`. You are welcome to modify and add more text art options. The window of text art options is displayed by calling `Views.displayTextArtOptions()`.
 
 <p align="center">
-<img src="images/textart_post.png" alt="New text art Post" width="30%"/>
+<img src="images/textart_post.png" alt="New text art Post" width="50%"/>
 </p>  
 
 
@@ -139,7 +139,7 @@ You are free to define and write more methods and/or classes to handle account l
 
 * Both the `TextPost` and `TextArtPost` classes extend abstract class `Post` and implement interface `PostContentFormatter`. Their relation is shown in the following UML diagram ([Generated using PlantUML Plugin for Eclispse](https://github.com/cbourke/ComputerScienceII/blob/master/resources/uml.md)).
 <p align="center">
-<img src="images/post_uml.png" alt="UML of Post Classes" width="50%"/>
+<img src="images/post_uml.png" alt="UML of Post Classes" width="60%"/>
 </p>  
 
 * Both the `TextPost` and `TextArtPost` classes extend abstract class `Post`, because they use the same data fields, `postTime` and `postAccount`, defined in `Post`.
