@@ -193,8 +193,9 @@ Submit the following to Canvas (not GradeScope). Our LAs will manually grade the
        * change file name to `Project1.jar` in `Export destination`
        * select `Package required libraries into generated JAR` for `Library handling`
        * then click the `Finish` button
+   * Type `java -jar Project1.jar` in the command line to test whether your JAR runs correctly.  
 
-2. `Project1.zip`: A Zip file of all source code that the LAs can execute and check.
+2. `Project1.zip`: A Zip file of all source files that the LAs can execute and check.
 
 Again, if you plan to work with one other student on this project, please sign
 up for a group on Canvas (`people` then `Groups`), and only one member of your group needs to
