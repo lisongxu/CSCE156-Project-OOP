@@ -97,7 +97,7 @@ Below is a demonstration where a user selects `T` and then types a text post.
 <img src="images/txt_post.png" alt="New txt Post" width="50%"/>
 </p>  
 
-Below is a demonstration where a user selects `A` and then chooses no 1 in the 4 predefined text art options. These text art options are defined as a `List<String[]>` constant `OPTIONS` in class `TextArtPost`. You are welcome to modify and add more text art options. The window of text art options is displayed by calling `Views.displayTextArtOptions()`.
+Below is a demonstration where a user selects `A` and then chooses no 3 in the 4 predefined text art options. These text art options are defined as a `List<String[]>` constant `OPTIONS` in class `TextArtPost`. You are welcome to modify and add more text art options. The window of text art options is displayed by calling `Views.displayTextArtOptions()`.
 
 <p align="center">
 <img src="images/textart_post.png" alt="New text art Post" width="50%"/>
