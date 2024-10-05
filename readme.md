@@ -186,7 +186,7 @@ the key is the account username, and the value is the corresponding account. For
 
 * (Bonus 10 points) Delete Accounts: Allow users to delete their current account. Remove the username, password, and all the user's posts.  
 
-* (Bonus 5 points) Sorting Posts: Allow users to choose how to sort the posts. In addition to the default dscending order of the time, users can choose from the following additional orderings: ascending order of the time, ascending or descending order of usernames of the posts.  
+* (Bonus 10 points) Sorting Posts: Allow users to choose how to sort the posts. In addition to the default dscending order of the time, users can choose from the following additional orderings: ascending order of the time, ascending or descending order of usernames of the posts.  
 
 ### 4.2 Submitting to Canvas
 
