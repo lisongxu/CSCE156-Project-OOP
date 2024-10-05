@@ -34,7 +34,7 @@ URL: `https://github.com/lisongxu/CSCE156-Project-OOP`.
 In this project, we will design and develop a simple social media application using Java, called *Jstgram*. It supports two basic features
 
 * Account management: A user can create a new account and log into an existing account.  
-* Post management: A user can create various types of posts and list the past posts.  
+* Post management: A user can create various types of posts and list past posts.  
 
 
 ### 2.1 Main Window
@@ -55,12 +55,12 @@ The *Account Registration Window* is demonstrated below. It asks the user for th
 <img src="images/user_registration_win.png" alt="User Registration Window" width="50%"/>
 </p>  
  
-After creating an account, Jstgram goes back to the *Main Window* so that a user can login or create other new accounts.
+After creating an account, Jstgram goes back to the *Main Window* so that a user can log in or create other new accounts.
 
 
 ### 2.3 Account Login Window
 
-The *Account Login Window* with successful login and failed login are demonstrated below. Jstgaram asks for the username and password, and then compares with the existing account information in `accounts`. This window is displayed by calling `Views.accountLoginWindow()`.
+The *Account Login Window* with successful login and failed login are demonstrated below. Jstgaram asks for the username and password, and then compares them with the existing account information in `accounts`. This window is displayed by calling `Views.accountLoginWindow()`.
 
 
 <p align="center">
@@ -73,7 +73,7 @@ If the typed username and password match with an existing account,  this account
 
 ### 2.4 Post View Window
 
-The *Post View Window* lists all the past posts (by all accounts) in the descending order of the time, and then asks the user to create a new post, logout the current account, or quit the application. Below shows a possible *Post View Window* with a total of 4 posts. This window is displayed by calling `Views.postViewWindow()`.
+The *Post View Window* lists all the past posts (by all accounts) in the descending order of the time, and then asks the user to create a new post, log out of the current account, or quit the application. Below is a possible *Post View Window* with a total of 4 posts. This window is displayed by calling `Views.postViewWindow()`.
 
 
 <p align="center">
@@ -82,19 +82,14 @@ The *Post View Window* lists all the past posts (by all accounts) in the descend
 
 After reading the user input, Jstgram 
 * goes to the *New Post Window* to create a new post
-* or logs out the current account and goes back to the *Main Window*
+* or logs out of the current account and goes back to the *Main Window*
 * or quits the application. 
 
 
 
 ### 2.5  New Post Window
 
-The *New Post Window* is shown below, where a user can choose to create either a text post or a text art post. This window is displayed by calling `Views.newPostWindow()`.
-
-<p align="center">
-<img src="images/new_post_win.png" alt="New Post" width="50%"/>
-</p>  
-
+The *New Post Window* allows a user to create either a text post or a text art post. This window is displayed by calling `Views.newPostWindow()`.
 
 Below is a demonstration where a user selects `T` and then types a text post.
 
@@ -147,7 +142,7 @@ You are free to define and write more methods and/or classes to handle account l
     * The `TextArtPost` class should have its own data field to store the no of the text art chosen by a user. 
 
 
-* Both the `TextPost` and `TextArtPost` classes implement interface `PostContentFormatter` to override the `getFormattedContent()` method, which `Views.viewPost()` in the *Post View Window* calls to display each post in the approriate format. 
+* Both the `TextPost` and `TextArtPost` classes implement interface `PostContentFormatter` to override the `getFormattedContent()` method, which `Views.viewPost()` in the *Post View Window* calls to display each post in the appropriate format. 
 
 
 * Please use a `HashMap` variable `accounts` to keep track of all account information. For each key-value pair, 
@@ -171,13 +166,13 @@ the key is the account username, and the value is the corresponding account. For
   
 * (10 points) A user can successfully create a new account (username=Alice, password=pass123), and then successfully log into the account.
 
-* (10 points) Alice can then successfully create a new text post and the *Post View Window* correctly shows the post in the appropriate format as demonstarted above.
+* (10 points) Alice can then successfully create a new text post and the *Post View Window* correctly shows the post in the appropriate format as demonstrated above.
 
 * (10 points) Alice can then successfully create a new text art post and the *Post View Window* correctly shows the post in the appropriate format as demonstrated above.
 
 * (10 points) The *Post View Window* correctly shows these two posts in the descending order of their times.
 
-* (10 points) When logging using username=Bob (not created yet), it correctly reports failed login.
+* (10 points) When logging in using username=Bob (not created yet), it correctly reports a failed login.
 
 * (10 points) A user can successfully create another new account (username=Bob, password=pass456), and then successfully log into the account.
 
@@ -187,26 +182,29 @@ the key is the account username, and the value is the corresponding account. For
 
 * (Bonus 20 points) Add the following features to the *Main Window*
     * Successfully save all accounts (e.g., Alice and Bob) and all their posts to a text file (feel free to design your file format).
-    * After quiting and restarting the application, a user can successfully load the accounts and their posts from a file.
+    * After quitting and restarting the application, a user can successfully load the accounts and their posts from a file.
 
+* (Bonus 10 points) Delete Accounts: Allow users to delete their current account. Remove the username, password, and all the user's posts.  
+
+* (Bonus 5 points) Sorting Posts: Allow users to choose how to sort the posts. In addition to the default dscending order of the time, users can choose from the following additional orderings: ascending order of the time, ascending or descending order of usernames of the posts.  
 
 ### 4.2 Submitting to Canvas
 
-Submit the following to Canvas (not GradeScope). Our LAs will manually grade them. You are welcome to demonstrate how your Jstgram works to our LAs, and they can then give you their feedbacks and grade your project.
+Submit the following to Canvas (not GradeScope). Our LAs will manually grade them. You are welcome to demonstrate how your Jstgram works to our LAs, and they can then give you their feedback and grade your project.
 
 1. `Project1.jar`: Follow the instructions below to generate a runnable JAR file that the LAs can execute.
-   *  Step 1: Run your project at least once (creates a `Launch Configuration` for step 4)
-   *  Step 2: Right click your project, and select `Export ...`
+   *  Step 1: Run your project at least once (create a `Launch Configuration` for step 4)
+   *  Step 2: Right-click your project, and select `Export ...`
    *  Step 3: In the Java folder, select `Runnable JAR file`
    *  Step 4: In the `Runnable JAR File Specification`
-       * select your project in `Lanuch Configuration`
+       * select your project in `Launch Configuration`
        * change file name to `Project1.jar` in `Export destination`
        * select `Package required libraries into generated JAR` for `Library handling`
        * then click the `Finish` button
 
 2. `Project1.zip`: A Zip file of all source code that the LAs can execute and check.
 
-Again, if you plan to work with one other student in this project, please sign
+Again, if you plan to work with one other student on this project, please sign
 up for a group on Canvas (`people` then `Groups`), and only one member of your group needs to
 submit your project on Canvas.
 
