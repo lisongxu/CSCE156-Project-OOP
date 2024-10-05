@@ -176,9 +176,9 @@ the key is the account username, and the value is the corresponding account. For
     * Successfully save all accounts (e.g., Alice and Bob) and all their posts to a text file (feel free to design your file format).
     * After quitting and restarting the application, a user can successfully load the accounts and their posts from a file.
 
-* (Bonus 10 points) Delete Accounts: Allow users to delete their current account. Remove the username, password, and all the user's posts.  
+* (Bonus 10 points) Delete Accounts: A user can delete the current account, which deletes the username, password, and all the user's posts.  
 
-* (Bonus 10 points) Sorting Posts: Allow users to choose how to sort the posts. In addition to the default descending order of the time, users can choose from the following additional orderings: ascending order of the time, ascending or descending order of usernames of the posts.  
+* (Bonus 10 points) Sorting Posts: A user can choose how to sort the posts. In addition to the default descending order of the time, a user can choose from the following additional orderings: ascending order of the time, ascending or descending order of usernames of the posts.  
 
 ### 4.2 Submitting to Canvas
 
