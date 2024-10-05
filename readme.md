@@ -89,7 +89,7 @@ After reading the user input, Jstgram
 
 ### 2.5  New Post Window
 
-The *New Post Window* allows a user to create either a text post or a text art post. This window is displayed by calling `Views.newPostWindow()`.
+The *New Post Window* allows a user to create either a text post `T` or a text art post `A`. This window is displayed by calling `Views.newPostWindow()`.
 
 Below is a demonstration where a user selects `T` and then types a text post.
 
@@ -116,10 +116,10 @@ After creating a post, Jstgram goes back to the *Post View Window*.
 
 You are provided with the following fully completed classes
 * the `Views` class
-* the `Post` class
+* the `Post` abstract class
 * the `PostContentFormatter` interface
 
-You will write and complete the following partially complete classes
+You will write and complete the following partially completed classes
 * the `Account` class
 * the `TextPost` class
 * the `TextArtPost` class
@@ -131,19 +131,11 @@ You are free to define and write more methods and/or classes to handle account l
 
 * The `Account` class must have 3 (or more) private data fields: `private String userName`, `private String password`, and `private String phoneNumber` and the corresponding public getter methods. 
 
-
-* Both the `TextPost` and `TextArtPost` classes extend abstract class `Post` and implement interface `PostContentFormatter`. Their relation is shown in the following UML diagram ([Generated using PlantUML Plugin for Eclispse](https://github.com/cbourke/ComputerScienceII/blob/master/resources/uml.md)).
-<p align="center">
-<img src="images/post_uml.png" alt="UML of Post Classes" width="60%"/>
-</p>  
-
 * Both the `TextPost` and `TextArtPost` classes extend abstract class `Post`, because they use the same data fields, `postTime` and `postAccount`, defined in `Post`.
     * The `TextPost` class should have its own data field to store the text typed by a user.
     * The `TextArtPost` class should have its own data field to store the no of the text art chosen by a user. 
 
-
 * Both the `TextPost` and `TextArtPost` classes implement interface `PostContentFormatter` to override the `getFormattedContent()` method, which `Views.viewPost()` in the *Post View Window* calls to display each post in the appropriate format. 
-
 
 * Please use a `HashMap` variable `accounts` to keep track of all account information. For each key-value pair, 
 the key is the account username, and the value is the corresponding account. For example, statement `accounts.put(userName, new Account(userName, password, phoneNumber))` adds a new account to `accounts`.
