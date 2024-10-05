@@ -12,33 +12,45 @@ public class TextArtPost extends Post implements PostContentFormatter {
     
     public static List<String[]> initTextArtOptions(){
     	List<String[]> textArts = new ArrayList<>();
-    	String[] bear = {
-    			"   ▄▀▀▀▄▄▄▄▄▄▄▀▀▀▄   ",
-    			"   █▒▒░░░░░░░░░▒▒█   ",
-    			"    █░░█░░░░░█░░█    ",
-    			"  ▄▄ █░░░▀█▀░░░█  ▄▄ ",
-    			"█░░█─▀▄░░░░░░░▄▀─█░░█"};
-    	textArts.add(bear);
-    	String[] welcome = {
-    			"█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█",
-    			"█░░╦─╦╔╗╦─╔╗╔╗╔╦╗╔╗░░█",
-    			"█░░║║║╠─║─║─║║║║║╠─░░█",
-    			"█░░╚╩╝╚╝╚╝╚╝╚╝╩─╩╚╝░░█",
-    			"█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█"};
-    	textArts.add(welcome);
-    	String[] phone = {
-    			"  ▄▄██████▄▄",
-    			"▄██▀▄█▄▄█▄▀██▄",
-    			"▀▀▀▄██▀▀██▄▀▀▀",
-    			" ▄███─██─███▄",
-    			" █████▄▄█████"};
-    	textArts.add(phone);
-    	String[] smile = {
-    			"╔══╗░░░░╔╦╗░░╔═════╗",
-    			"║╚═╬════╬╣╠═╗║░▀░▀░║",
-    			"╠═╗║╔╗╔╗║║║╩╣║╚═══╝║",
-    			"╚══╩╝╚╝╚╩╩╩═╝╚═════╝"};
-    	textArts.add(smile);
+    	String[] house = {
+        		"  ____||____   ",
+        		" ///////////\\ ",
+        		"///////////  \\",
+        		"|    _    |  | ",
+        		"|[] | | []|[]| ",
+        		"|   | |   |  | ",
+    	};
+    	textArts.add(house);
+    	String[] dog = {
+    			" /^ ^\\ ",
+    			"/ 0 0 \\",
+    			"V\\ Y /V",
+    			" / - \\ ", 
+    			"/    | ",
+    			"V__) ||"
+    	};
+    	textArts.add(dog);
+    	String[] coffee = {
+    			"  ( (    ",
+    			"   ) )   ",
+    			"........ ",
+    			"|      |]",
+    			"\\      / ",  
+    			" `----'   "	
+    	};
+    	textArts.add(coffee);
+    	String[] flower = {
+    			"   (\\__         ",
+    			"  :=)__)-|  __/) ",
+    			"   (/    |-(__(=:",
+    			" ______  |  _ \\) ",
+    			"/      \\ | / \\   ",
+    			"     ___\\|/___\\  ",
+    			"    [         ]\\ ",
+    			"     \\       /   ",
+    			"      \\_____/    "
+    	};
+    	textArts.add(flower);
     	return textArts;
     }
 
