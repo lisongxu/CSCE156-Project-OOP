@@ -154,6 +154,8 @@ the key is the account username, and the value is the corresponding account. For
 
 ### 4.1 Grading by LAs
 
+#### 4.1.1 Required features (100 points)
+
 * (5 points) The `Account` class must have 3 (or more) private data fields: `private String userName`, `private String password`, and `private String phoneNumber` and the corresponding public getter methods. 
 
 * (5 points) Both the `TextPost` and `TextArtPost` classes (not necessarily correctly) override the `getFormattedContent()` method.
@@ -178,13 +180,15 @@ the key is the account username, and the value is the corresponding account. For
 
 * (10 points) The *Post View Window* correctly shows all the posts in the descending order of their times.
 
-* (Bonus 20 points) Add the following features to the *Main Window*
-    * Successfully save all accounts (e.g., Alice and Bob) and all their posts to a text file (feel free to design your file format).
-    * After quitting and restarting the application, a user can successfully load the accounts and their posts from a file.
+#### 4.1.2 Bonus features (Additional points)
 
-* (Bonus 10 points) Delete Accounts: A user can delete the current account, which deletes the username, password, and all the user's posts.  
+* (Bonus 5 points) Please attend lab sessions for detailed grading criteria on comments and coding style.
 
-* (Bonus 10 points) Sorting Posts: A user can choose how to sort the posts. In addition to the default descending order of the time, a user can choose from the following additional orderings: ascending order of the time, ascending or descending order of usernames of the posts.  
+* (Bonus 20 points) There is a pre-registered Admin user. The Admin user can save all accounts (e.g., Alice and Bob) and all their posts to a text file (feel free to design your file format). After quitting and restarting the application, the Admin user can load the accounts and their posts from a file.
+
+* (Bonus 10 points) A user can delete the current account, which deletes the username, password, and all the user's posts.  
+
+* (Bonus 10 points) A user can choose how to sort the posts in the Post View Window. In addition to the default descending order of the time, a user can choose from the following additional orderings: ascending order of the time, ascending or descending order of usernames of the posts.  
 
 ### 4.2 Submitting to Canvas
 
