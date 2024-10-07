@@ -5,5 +5,5 @@ public interface PostContentFormatter {
 	// the first character is |
 	// then 40 characters
 	// the last character is | 
-    String getFormattedContent();
+	String getFormattedContent();
 }
