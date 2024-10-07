@@ -142,7 +142,7 @@ You are free to define and write more methods and/or classes to handle account l
     * Both the `TextPost` and `TextArtPost` classes implement interface `PostContentFormatter` to override the `getFormattedContent()` method, which `Views.viewPost()` in the *Post View Window* calls to display each post in the appropriate format. 
 
 * The `Main` Class
-* 
+ 
     * Please use a `HashMap` variable `accounts` to keep track of all account information. For each key-value pair, 
 the key is the account username, and the value is the corresponding account. For example, statement `accounts.put(userName, new Account(userName, password, phoneNumber))` adds a new account to `accounts`.
 
