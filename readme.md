@@ -129,19 +129,25 @@ You are free to define and write more methods and/or classes to handle account l
 
 ### 3.2 Class Requirements
 
-* The `Account` class must have 3 (or more) private data fields: `private String userName`, `private String password`, and `private String phoneNumber` and the corresponding public getter methods. 
+* The `Account` Class
 
-* Both the `TextPost` and `TextArtPost` classes extend abstract class `Post`, because they use the same data fields, `postTime` and `postAccount`, defined in `Post`.
-    * The `TextPost` class should have its own data field to store the text typed by a user.
-    * The `TextArtPost` class should have its own data field to store the no of the text art chosen by a user. 
+    * The `Account` class must have 3 (or more) private data fields: `private String userName`, `private String password`, and `private String phoneNumber` and the corresponding public getter methods. 
 
-* Both the `TextPost` and `TextArtPost` classes implement interface `PostContentFormatter` to override the `getFormattedContent()` method, which `Views.viewPost()` in the *Post View Window* calls to display each post in the appropriate format. 
+* The `TextPost` and `TextArtPost` Classes
 
-* Please use a `HashMap` variable `accounts` to keep track of all account information. For each key-value pair, 
+    * Both the `TextPost` and `TextArtPost` classes extend abstract class `Post`, because they use the same data fields, `postTime` and `postAccount`, defined in `Post`.
+        * The `TextPost` class should have its own data field to store the text typed by a user.
+        * The `TextArtPost` class should have its own data field to store the no of the text art chosen by a user. 
+
+    * Both the `TextPost` and `TextArtPost` classes implement interface `PostContentFormatter` to override the `getFormattedContent()` method, which `Views.viewPost()` in the *Post View Window* calls to display each post in the appropriate format. 
+
+* The `Main` Class
+* 
+    * Please use a `HashMap` variable `accounts` to keep track of all account information. For each key-value pair, 
 the key is the account username, and the value is the corresponding account. For example, statement `accounts.put(userName, new Account(userName, password, phoneNumber))` adds a new account to `accounts`.
 
 
-* Please use an `ArrayList<Post>` variable `postList` to store all the posts, which is the argument of method `Views.viewPost()`. 
+    * Please use an `ArrayList<Post>` variable `postList` to store all the posts, which is the argument of method `Views.viewPost()`. 
 
 
 ## 4. Grading and Submitting Your Project
