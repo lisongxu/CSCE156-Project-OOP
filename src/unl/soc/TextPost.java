@@ -2,7 +2,7 @@ package unl.soc;
 
 import java.time.LocalDateTime;
 
-public class TextPost extends Post implements PostContentFormatter {
+public class TextPost extends Post {
 
 	@Override
 	public String getFormattedContent() {
