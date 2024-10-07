@@ -6,40 +6,40 @@ import java.util.*;
 public class TextArtPost extends Post implements PostContentFormatter {
 	public final static List<String[]> OPTIONS;
     
-    static { // initialize when the class is loaded
-    	OPTIONS = initTextArtOptions();
-    }
+	static { // initialize when the class is loaded
+		OPTIONS = initTextArtOptions();
+    	}
     
-    public static List<String[]> initTextArtOptions(){
-    	List<String[]> textArts = new ArrayList<>();
-    	String[] house = {
+    	public static List<String[]> initTextArtOptions(){
+    		List<String[]> textArts = new ArrayList<>();
+    		String[] house = {
         		"  ____||____   ",
         		" ///////////\\ ",
         		"///////////  \\",
         		"|    _    |  | ",
         		"|[] | | []|[]| ",
         		"|   | |   |  | ",
-    	};
-    	textArts.add(house);
-    	String[] dog = {
+    		};
+    		textArts.add(house);
+    		String[] dog = {
     			" /^ ^\\ ",
     			"/ 0 0 \\",
     			"V\\ Y /V",
     			" / - \\ ", 
     			"/    | ",
     			"V__) ||"
-    	};
-    	textArts.add(dog);
-    	String[] coffee = {
+    		};
+    		textArts.add(dog);
+    		String[] coffee = {
     			"  ( (    ",
     			"   ) )   ",
     			"........ ",
     			"|      |]",
     			"\\      / ",  
     			" `----'   "	
-    	};
-    	textArts.add(coffee);
-    	String[] flower = {
+    		};
+    		textArts.add(coffee);
+    		String[] flower = {
     			"   (\\__         ",
     			"  :=)__)-|  __/) ",
     			"   (/    |-(__(=:",
@@ -49,10 +49,10 @@ public class TextArtPost extends Post implements PostContentFormatter {
     			"    [         ]\\ ",
     			"     \\       /   ",
     			"      \\_____/    "
-    	};
-    	textArts.add(flower);
-    	return textArts;
-    }
+    		};
+    		textArts.add(flower);
+    		return textArts;
+	}
 
 	@Override
 	public String getFormattedContent() {
