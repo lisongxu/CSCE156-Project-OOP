@@ -73,7 +73,7 @@ If the typed username and password match with an existing account,  this account
 
 ### 2.4 Post View Window
 
-The *Post View Window* lists all the past posts (by all accounts) in the descending order of the time, and then asks the user to create a new post, log out of the current account, or quit the application. Below is a possible *Post View Window* with a total of 4 posts. This window is displayed by calling `Views.postViewWindow()`.
+The *Post View Window* lists all the past posts (by all accounts) in the descending order of the time, and then asks the user to create a new post, log out of the current account, or quit the application. Below is a possible *Post View Window* with a total of 4 posts when the current user is Bob. This window is displayed by calling `Views.postViewWindow()`.
 
 
 <p align="center">
@@ -91,20 +91,20 @@ After reading the user input, Jstgram
 
 The *New Post Window* allows a user to create either a text post `T` or a text art post `A`. This window is displayed by calling `Views.newPostWindow()`.
 
-Below is a demonstration where a user selects `T` and then types a text post.
+Below is a demonstration where Bob selects `T` and then types a text post.
 
 <p align="center">
 <img src="images/txt_post.png" alt="New txt Post" width="40%"/>
 </p>  
 
-Below is a demonstration where a user selects `A` and then chooses no 3 in the 4 predefined text art options. These text art options are defined as a `List<String[]>` constant `OPTIONS` in class `TextArtPost`. You are welcome to modify and add more text art options. The window of text art options is displayed by calling `Views.displayTextArtOptions()`.
+Below is a demonstration where Bob selects `A` and then chooses the second one in the 4 predefined text art options. These text art options are defined as a `List<String[]>` constant `OPTIONS` in class `TextArtPost`. You are welcome to modify and add more text art options. The window of text art options is displayed by calling `Views.displayTextArtOptions()`.
 
 <p align="center">
 <img src="images/textart_post.png" alt="New text art Post" width="40%"/>
 </p>  
 
 
-After creating a post, Jstgram goes back to the *Post View Window*.
+After creating a post, Jstgram returns to the *Post View Window*.
 
 
   
@@ -115,9 +115,9 @@ After creating a post, Jstgram goes back to the *Post View Window*.
 ### 3.1 Classes
 
 You are provided with the following fully completed classes
-* the `Views` class
-* the `Post` abstract class
-* the `PostContentFormatter` interface
+* the `Views` class, which displays all the windows
+* the `Post` abstract class, which is the superclass of post subclasses.
+* the `ContentFormatter` interface, which is an interface to format the content of a post or account
 
 You will write and complete the following partially completed classes
 * the `Account` class
@@ -125,29 +125,27 @@ You will write and complete the following partially completed classes
 * the `TextArtPost` class
 * the `Main` class, which is the class to run the application
 
-You are free to define and write more methods and/or classes to handle account login, handle account registration, create new post, and list past posts.
+You are free to define and write more methods and/or classes to handle account login, handle account registration, create new posts, and list current posts.
 
 ### 3.2 Class Requirements
 
 * The `Account` Class
 
-    * The `Account` class must have 3 (or more) private data fields: `private String userName`, `private String password`, and `private String phoneNumber` and the corresponding public getter methods. 
+    * The `Account` class must have 3 or more private data fields: `private String userName`, `private String password`, and `private String phoneNumber` and the corresponding public getter methods. 
+    * The `Account` class implements the corresponding public getter methods.
 
 * The `TextPost` and `TextArtPost` Classes
 
     * Both the `TextPost` and `TextArtPost` classes extend abstract class `Post`, because they use the same data fields, `postTime` and `postAccount`, defined in `Post`.
-        * The `TextPost` class should have its own data field to store the text typed by a user.
-        * The `TextArtPost` class should have its own data field to store the no of the text art chosen by a user. 
-
-    * Both the `TextPost` and `TextArtPost` classes implement interface `PostContentFormatter` to override the `getFormattedContent()` method, which `Views.viewPost()` in the *Post View Window* calls to display each post in the appropriate format. 
+    * The `TextPost` class should have a data field to store the text typed by a user.
+    * The `TextArtPost` class should have a data field to store the text art chosen by a user. 
+    * Both the `TextPost` and `TextArtPost` classes override the `getFormattedContent()` method defined in interface `ContentFormatter`, which `Views.viewPost()` in the *Post View Window* calls to display each post in the appropriate format. 
 
 * The `Main` Class
  
-    * Please use a `HashMap` variable `accounts` to keep track of all account information. For each key-value pair, 
+    * The `Main` class uses a `HashMap` variable `accounts` to keep track of all account information. For each key-value pair, 
 the key is the account username, and the value is the corresponding account. For example, statement `accounts.put(userName, new Account(userName, password, phoneNumber))` adds a new account to `accounts`.
-
-
-    * Please use an `ArrayList<Post>` variable `postList` to store all the posts, which is the argument of method `Views.viewPost()`. 
+    * The `Main` class uses an `ArrayList<Post>` variable `postList` to store all the posts, which is the argument of method `Views.viewPost()`. 
 
 
 ## 4. Grading and Submitting Your Project
