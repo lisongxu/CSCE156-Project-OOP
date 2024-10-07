@@ -3,7 +3,7 @@ package unl.soc;
 import java.time.LocalDateTime;
 import java.util.*;
 
-public class TextArtPost extends Post implements PostContentFormatter {
+public class TextArtPost extends Post {
 	public final static List<String[]> OPTIONS;
     
 	static { // initialize when the class is loaded
