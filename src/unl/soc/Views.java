@@ -14,7 +14,8 @@ public class Views {
     public static final String ANSI_Cyan = "\u001B[36m";
 
     public static void mainWindow() {
-        System.out.println(ANSI_Green + " ========================================");
+        System.out.print(ANSI_Green);
+        System.out.println(" ========================================");
         System.out.println("|         Welcome to Jstgram!            |");
         System.out.println("|                                        |");
         System.out.println("|              *************             |");
@@ -30,11 +31,13 @@ public class Views {
         System.out.println("|   Register(R) or Login(L) or Quit(Q)   |");
         System.out.println("|                                        |");
         System.out.println("|                                        |");
-        System.out.println(" ========================================" + ANSI_RESET);
+        System.out.println(" ========================================");
+        System.out.print(ANSI_RESET);
     }
 
     public static void accountRegistrationWindow() {
-        System.out.println(ANSI_Yellow + " ========================================");
+        System.out.print(ANSI_Yellow);
+        System.out.println(" ========================================");
         System.out.println("|          Register New Account          |");
         System.out.println("|                                        |");
         System.out.println("|                                        |");
@@ -50,11 +53,13 @@ public class Views {
         System.out.println("|                                        |");
         System.out.println("|                                        |");
         System.out.println("|                                        |");
-        System.out.println(" ========================================" + ANSI_RESET);
+        System.out.println(" ========================================");
+        System.out.print(ANSI_RESET);
     }
 
     public static void accountLoginWindow() {
-        System.out.println(ANSI_Blue + " ========================================");
+        System.out.print(ANSI_Blue);
+        System.out.println(" ========================================");
         System.out.println("|                 Login                  |");
         System.out.println("|                                        |");
         System.out.println("|                                        |");
@@ -70,28 +75,34 @@ public class Views {
         System.out.println("|                                        |");
         System.out.println("|                                        |");
         System.out.println("|                                        |");
-        System.out.println(" ========================================" + ANSI_RESET);
+        System.out.println(" ========================================");
+        System.out.print(ANSI_RESET);
     }
 
 
     public static void postViewWindow(List<Post> posts) {
-        System.out.println(ANSI_Cyan + " ========================================");
+        System.out.print(ANSI_Cyan);
+        System.out.println(" ========================================");
         for (Post p : posts) {
             System.out.print(p.getFormattedContent());
             System.out.printf("|%40s|\n", p.tag());
         }
         System.out.println("|  New Post(+) or Logout(L) or Quit(Q)   |");
-        System.out.println(" ========================================" + ANSI_RESET);
+        System.out.println(" ========================================");
+        System.out.print(ANSI_RESET);
     }
 
     public static void newPostWindow() {
-        System.out.println(ANSI_Cyan + " ========================================");
+        System.out.print(ANSI_Cyan);
+        System.out.println(" ========================================");
         System.out.println("|  Text Post(T) or Text Art Post(A)      |");
-        System.out.println(" ========================================" + ANSI_RESET);
+        System.out.println(" ========================================");
+        System.out.print(ANSI_RESET);
     }
 
     public static void displayTextArtOptions() {
-        System.out.println(ANSI_Cyan + " ========================================");
+        System.out.print(ANSI_Cyan);
+        System.out.println(" ========================================");
         for (int i = 0; i < TextArtPost.OPTIONS.size(); i++) {
         	String[] strings = TextArtPost.OPTIONS.get(i);
             System.out.printf("|%d : %-36s|\n", i, strings[0]);
@@ -100,7 +111,8 @@ public class Views {
         	System.out.printf("|%40s|\n", "");
         }
         System.out.println("|    Which Text Art do you choose?       |");
-        System.out.println(" ========================================" + ANSI_RESET);
+        System.out.println(" ========================================");
+        System.out.print(ANSI_RESET);
     }
  
     
