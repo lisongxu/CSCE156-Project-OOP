@@ -3,7 +3,7 @@ package unl.soc;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public abstract class Post implements PostContentFormatter {
+public abstract class Post implements ContentFormatter {
     protected LocalDateTime postTime;
     protected Account postAccount;
 
