@@ -80,7 +80,7 @@ public class Views {
     }
 
 
-    public static void postViewWindow(List<Post> posts) {
+    public static void postViewWindow(List<Post> posts, Account currentAccount) {
         System.out.print(ANSI_Cyan);
         System.out.println(" ========================================");
         for (Post p : posts) {
@@ -88,19 +88,23 @@ public class Views {
             System.out.printf("|%40s|\n", p.tag());
         }
         System.out.println("|  New Post(+) or Logout(L) or Quit(Q)   |");
+        if (currentAccount != null)
+        	System.out.print(currentAccount.getFormattedContent());
         System.out.println(" ========================================");
         System.out.print(ANSI_RESET);
     }
 
-    public static void newPostWindow() {
+    public static void newPostWindow(Account currentAccount) {
         System.out.print(ANSI_Cyan);
         System.out.println(" ========================================");
         System.out.println("|  Text Post(T) or Text Art Post(A)      |");
+        if (currentAccount != null)
+        	System.out.print(currentAccount.getFormattedContent());
         System.out.println(" ========================================");
         System.out.print(ANSI_RESET);
     }
 
-    public static void displayTextArtOptions() {
+    public static void displayTextArtOptions(Account currentAccount) {
         System.out.print(ANSI_Cyan);
         System.out.println(" ========================================");
         for (int i = 0; i < TextArtPost.OPTIONS.size(); i++) {
@@ -111,6 +115,8 @@ public class Views {
         	System.out.printf("|%40s|\n", "");
         }
         System.out.println("|    Which Text Art do you choose?       |");
+        if (currentAccount != null)
+        	System.out.print(currentAccount.getFormattedContent());
         System.out.println(" ========================================");
         System.out.print(ANSI_RESET);
     }
