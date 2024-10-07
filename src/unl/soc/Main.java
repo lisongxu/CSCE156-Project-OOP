@@ -12,9 +12,9 @@ public class Main {
         Views.mainWindow();
         Views.accountRegistrationWindow();
         Views.accountLoginWindow();
-        Views.postViewWindow(postList);
-       	Views.newPostWindow();
-       	Views.displayTextArtOptions();
+        Views.postViewWindow(postList, currentAccount);
+       	Views.newPostWindow(currentAccount);
+       	Views.displayTextArtOptions(currentAccount);
     }
 
 }
