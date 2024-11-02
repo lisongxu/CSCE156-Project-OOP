@@ -182,7 +182,7 @@ the key is the account username, and the value is the corresponding account. For
 
 * (Bonus 5 points) Please attend lab sessions for detailed grading criteria on comments and coding style.
 
-* (Bonus 20 points) There is a pre-registered Admin user. The Admin user can save all accounts (e.g., Alice and Bob) and all their posts to a text file (feel free to design your file format). After quitting and restarting the application, the Admin user can load the accounts and their posts from a file.
+* (Bonus 20 points) There is a pre-registered Admin user with username `admin` and password `admin`. The Admin user can save all accounts (e.g., Alice and Bob) and all their posts to a text file (feel free to design your file format). After quitting and restarting the application, the Admin user can load the accounts and their posts from a file.
 
 * (Bonus 10 points) A user can delete the current account, which deletes the username, password, and all the user's posts.  
 
