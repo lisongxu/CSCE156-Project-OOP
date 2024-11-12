@@ -168,7 +168,7 @@ the key is the account username, and the value is the corresponding account. For
 
 * (10 points) Alice can then successfully create a new text art post and the *Post View Window* correctly shows the post in the appropriate format as demonstrated above.
 
-* (10 points) The *Post View Window* correctly shows these two posts in the descending order of their times.
+* (10 points) The *Post View Window* correctly shows these two posts in the descending order of their times (i.e., from the latest post to the oldest post).
 
 * (10 points) When logging in using username=Bob (not created yet), it correctly reports a failed login.
 
