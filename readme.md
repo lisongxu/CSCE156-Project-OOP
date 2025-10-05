@@ -60,7 +60,7 @@ After creating an account, Jstgram goes back to the *Main Window* so that a user
 
 ### 2.3 Account Login Window
 
-The *Account Login Window* with successful login and failed login are demonstrated below. Jstgaram asks for the username and password, and then compares them with the existing account information in `accounts`. This window is displayed by calling `Views.accountLoginWindow()`.
+The *Account Login Windows* with successful login and failed login are demonstrated below. Jstgram asks for the username and password, and then compares them with the existing account information in `accounts`. This window is displayed by calling `Views.accountLoginWindow()`.
 
 
 <p align="center">
@@ -73,7 +73,7 @@ If the typed username and password match with an existing account,  this account
 
 ### 2.4 Post View Window
 
-The *Post View Window* lists all the past posts (by all accounts) in the descending order of the time, and then asks the user to create a new post, log out of the current account, or quit the application. Below is a possible *Post View Window* with a total of 4 posts when the current user is Bob. This window is displayed by calling `Views.postViewWindow()`.
+The *Post View Window* lists all the past posts by all accounts in the descending chronological order (most recent first), and then asks the user to create a new post, log out of the current account, or quit the application. Below is a possible *Post View Window* with a total of 4 posts when the current user is Bob. This window is displayed by calling `Views.postViewWindow()`.
 
 
 <p align="center">
@@ -81,7 +81,7 @@ The *Post View Window* lists all the past posts (by all accounts) in the descend
 </p>  
 
 After reading the user input, Jstgram 
-* goes to the *New Post Window* to create a new post
+* navigates to the *New Post Window* to create a new post
 * or logs out of the current account and goes back to the *Main Window*
 * or quits the application. 
 
@@ -94,7 +94,7 @@ The *New Post Window* allows a user to create either a text post `T` or a text a
 Below is a demonstration where Bob selects `T` and then types a text post.
 
 <p align="center">
-<img src="images/txt_post.png" alt="New txt Post" width="40%"/>
+<img src="images/txt_post.png" alt="New text Post" width="40%"/>
 </p>  
 
 Below is a demonstration where Bob selects `A` and then chooses the second one in the 4 predefined text art options. These text art options are defined as a `List<String[]>` constant `OPTIONS` in class `TextArtPost`. You are welcome to modify and add more text art options. The window of text art options is displayed by calling `Views.displayTextArtOptions()`.
@@ -109,14 +109,14 @@ After creating a post, Jstgram returns to the *Post View Window*.
 
   
 
-## 3. Project Requirement
+## 3. Project Requirements
 
 
 ### 3.1 Classes
 
-You are provided with the following fully completed classes
+You are provided with the following fully completed classes:
 * the `Views` class, which displays all the windows
-* the `Post` abstract class, which is the superclass of post subclasses.
+* the `Post` abstract class, which is the superclass of `TextPost` and `TextArtPost` classes
 * the `ContentFormatter` interface, which is an interface to format the content of a post or account
 
 You will write and complete the following partially completed classes
@@ -125,14 +125,15 @@ You will write and complete the following partially completed classes
 * the `TextArtPost` class
 * the `Main` class, which is the class to run the application
 
-You are free to define and write more methods and/or classes to handle account login, handle account registration, create new posts, and list current posts.
+You are free to define and write more methods and/or classes to handle account login, handle account registration, create new posts, and list posts.
 
 ### 3.2 Class Requirements
 
 * The `Account` Class
 
-    * The `Account` class must have 3 or more private data fields: `private String userName`, `private String password`, and `private String phoneNumber` and the corresponding public getter methods. 
+    * The `Account` class must have 3 or more private data fields: `private String userName`, `private String password`, and `private String phoneNumber`. Note that passwords are stored in plain text for learning purposes only in this project.
     * The `Account` class implements the corresponding public getter methods.
+    * The `Account` class overrides the `getFormattedContent()` method defined in interface `ContentFormatter` to display the current user in the appropriate format. 
 
 * The `TextPost` and `TextArtPost` Classes
 
@@ -140,7 +141,7 @@ You are free to define and write more methods and/or classes to handle account l
     * The `TextPost` class should have a data field to store the text typed by a user.
     * The `TextArtPost` class should have a data field to store the text art chosen by a user. 
     * Both the `TextPost` and `TextArtPost` classes override the `getFormattedContent()` method defined in interface `ContentFormatter`, which `Views.viewPost()` in the *Post View Window* calls to display each post in the appropriate format. 
-    * The following UML shows the relation among `ContentFormatter`, `Post`, `TextPost`, `TextArtPost`, and `Account` classes. You are free to add more data fields and/or methods to `TextPost`, `TextArtPost`, and `Account` classes.
+    * The following UML shows the relationships among `ContentFormatter`, `Post`, `TextPost`, `TextArtPost`, and `Account` classes. You are free to add more data fields and/or methods to `TextPost`, `TextArtPost`, and `Account` classes.
    
 <p align="center">
 <img src="images/UML.png" alt="UML Diagram" width="80%"/>
@@ -161,9 +162,9 @@ the key is the account username, and the value is the corresponding account. For
 
 #### 4.1.1 Required features (100 points)
 
-* (5 points) The `Account` class must have 3 (or more) private data fields: `private String userName`, `private String password`, and `private String phoneNumber` and the corresponding public getter methods. 
+* (5 points) The `Account` class must have 3 (or more) private data fields: `private String userName`, `private String password`, and `private String phoneNumber` and the corresponding public getter methods, and correctly overrides the `getFormattedContent()` method. 
 
-* (5 points) Both the `TextPost` and `TextArtPost` classes (not necessarily correctly) override the `getFormattedContent()` method.
+* (5 points) Both the `TextPost` and `TextArtPost` classes correctly override the `getFormattedContent()` method.
 
 * (5 points) A `HashMap` variable `accounts` is used to keep track of all account information
 
@@ -197,7 +198,7 @@ the key is the account username, and the value is the corresponding account. For
 
 ### 4.2 Submitting to Canvas
 
-Submit the following to Canvas (not GradeScope). Our LAs will manually grade them. You are welcome to demonstrate how your Jstgram works to our LAs, and they can then give you their feedback and grade your project.
+Submit the following to Canvas (not Gradescope). Our LAs will manually grade them. You are welcome to demonstrate how your Jstgram works to our LAs, and they can then give you their feedback and grade your project.
 
 1. `Project1.jar`: Follow the instructions below to generate a runnable JAR file that the LAs can execute.
    *  Step 1: Run your project at least once (create a `Launch Configuration` for step 4)
@@ -215,7 +216,7 @@ Submit the following to Canvas (not GradeScope). Our LAs will manually grade the
 Incomplete submissions (e.g., missing the JAR or ZIP file) will receive a zero point. 
 
 Again, if you plan to work with one other student on this project, please sign
-up for a group on Canvas (`people` then `Groups`), and only one member of your group needs to
+up for a group on Canvas (`People` then `Groups`), and only one member of your group needs to
 submit your project on Canvas.
 
 
