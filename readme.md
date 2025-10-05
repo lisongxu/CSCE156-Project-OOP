@@ -140,6 +140,13 @@ You are free to define and write more methods and/or classes to handle account l
     * The `TextPost` class should have a data field to store the text typed by a user.
     * The `TextArtPost` class should have a data field to store the text art chosen by a user. 
     * Both the `TextPost` and `TextArtPost` classes override the `getFormattedContent()` method defined in interface `ContentFormatter`, which `Views.viewPost()` in the *Post View Window* calls to display each post in the appropriate format. 
+    * The following UML shows the relation among `ContentFormatter`, `Post`, `TextPost`, `TextArtPost`, and `Account` classes. You are free to add more data fields and/or methods to `TextPost`, `TextArtPost`, and `Account` classes.
+   
+<p align="center">
+<img src="images/UML.png" alt="UML Diagram" width="80%"/>
+</p>  
+
+
 
 * The `Main` Class
  
