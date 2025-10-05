@@ -212,6 +212,8 @@ Submit the following to Canvas (not GradeScope). Our LAs will manually grade the
 
 2. `Project1.zip`: A Zip file of all source files that the LAs can execute and check.
 
+Incomplete submissions (e.g., missing the JAR or ZIP file) will receive a zero point. 
+
 Again, if you plan to work with one other student on this project, please sign
 up for a group on Canvas (`people` then `Groups`), and only one member of your group needs to
 submit your project on Canvas.
