@@ -11,6 +11,6 @@ public class Account implements ContentFormatter{
 
     @Override
     public String getFormattedContent() {
-        return String.format("|  Current user : %-23s|\n", userName);
+        return String.format("|  Current user : %-23s|\n", "??TO DO??");
     }
 }
