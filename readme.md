@@ -34,7 +34,7 @@ URL: `https://github.com/lisongxu/CSCE156-Project-OOP`.
 In this project, we will design and develop a simple social media application using Java, called *Jstgram*. It supports two basic features
 
 * Account management: A user can create a new account and log into an existing account.  
-* Post management: A user can create various types of posts and list past posts.  
+* Post management: A user can create new posts and list past posts.  
 
 
 ### 2.1 Main Window
