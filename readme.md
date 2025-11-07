@@ -162,6 +162,8 @@ the key is the account username, and the value is the corresponding account. For
 
 #### 4.1.1 Required features (100 points)
 
+* Submission (5 points): Submitted all required files: `Project1.jar` and `Project1.zip`. You will lose these points if the LA has to contact you for missing files. 
+
 * (5 points) The `Account` class must have 3 (or more) private data fields: `private String userName`, `private String password`, and `private String phoneNumber` and the corresponding public getter methods, and correctly overrides the `getFormattedContent()` method. 
 
 * (5 points) Both the `TextPost` and `TextArtPost` classes correctly override the `getFormattedContent()` method.
@@ -170,7 +172,7 @@ the key is the account username, and the value is the corresponding account. For
 
 * (5 points) An `ArrayList<Post>` variable `postList` is used to store all the posts. 
   
-* (10 points) A user can successfully create a new account (username=Alice, password=pass123), and then successfully log into the account.
+* (5 points) A user can successfully create a new account (username=Alice, password=pass123), and then successfully log into the account.
 
 * (10 points) Alice can then successfully create a new text post and the *Post View Window* correctly shows the post in the appropriate format as demonstrated above.
 
@@ -203,17 +205,26 @@ Submit the following to Canvas (not Gradescope). Our LAs will manually grade the
 1. `Project1.jar`: Follow the instructions below to generate a runnable JAR file that the LAs can execute.
    *  Step 1: Run your project at least once (create a `Launch Configuration` for step 4)
    *  Step 2: Right-click your project, and select `Export ...`
-   *  Step 3: In the Java folder, select `Runnable JAR file`
-   *  Step 4: In the `Runnable JAR File Specification`
+   *  Step 3: In the `Java` folder, select `Runnable JAR file`, then click `Next`
+   *  Step 4: In the `Runnable JAR File Specification` dialog
        * select your project in `Launch Configuration`
-       * change file name to `Project1.jar` in `Export destination`
        * select `Package required libraries into generated JAR` for `Library handling`
+       * click the `Browse` button to choose the directory to save your JAR file, and change the filename to `Project1.jar`
+       * then click the `Finish` button
        * then click the `Finish` button
    * Type `java -jar Project1.jar` in the command line to test whether your JAR runs correctly.  
 
-2. `Project1.zip`: A Zip file of all source files that the LAs can execute and check.
+2. `Project1.zip`:  Follow the instructions below to generate a ZIP file of all project source files that the LAs can read and check.
+   *  Step 1: Right-click your project, and select `Export ...`
+   *  Step 2: In the `General` folder, select `Archive File`, then click `Next`
+   *  Step 3: In the `Export Archive File` dialog
+       * click the `Select All` button to select all files of your project
+       * ensure `Save in zip format` is selected
+       * click the `Browse` button to choose the directory to save your ZIP file, and change the filename to `Project1.zip`
+       * then click the `Finish` button 
 
-Incomplete submissions (e.g., missing the JAR or ZIP file) will receive a zero point. 
+ 3. `bonus.pdf`: If you implement any bonus feature (other than comments and coding style), please submit a `bonus.pdf` to describe how the LA tests your bonus features.
+    
 
 Again, if you plan to work with one other student on this project, please sign
 up for a group on Canvas (`People` then `Groups`), and only one member of your group needs to
