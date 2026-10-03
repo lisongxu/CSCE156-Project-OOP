@@ -1,7 +1,7 @@
 # Computer Science II
 ## Project - OOP
 
-This is a project used in Computer Science II (CSCE 156) for Fall 2025 
+This is a project used in Computer Science II (CSCE 156) for Fall 2026 
 in the [School of Computing](https://computing.unl.edu) 
 at the [University of Nebraska-Lincoln](https://www.unl.edu).
 
@@ -17,9 +17,7 @@ Following the lab, you should be able to:
 
 ### Peer Programming Pair-Up
 
-At the beginning of each project, you may find a team member on your own.  Please ***sign
-up for a group on Canvas*** (`People` then `Groups`), and only one member of your group needs to
-submit your project on Canvas. If you prefer to work on this project by yourself, that is fine too.
+At the beginning of each project, you may find a team member on your own and then work together. If you prefer to work on this project by yourself, that is fine too.
 
 
 ## 1. Getting Started
@@ -60,7 +58,7 @@ After creating an account, Jstgram goes back to the *Main Window* so that a user
 
 ### 2.3 Account Login Window
 
-The *Account Login Windows* with successful login and failed login are demonstrated below. Jstgram asks for the username and password, and then compares them with the existing account information in `accounts`. This window is displayed by calling `Views.accountLoginWindow()`.
+The *Account Login Window* is demonstrated below for both a successful login and a failed login. Jstgram asks for the username and password, and then compares them with the existing account information in `accounts`. This window is displayed by calling `Views.accountLoginWindow()`.
 
 
 <p align="center">
@@ -140,7 +138,7 @@ You are free to define and write more methods and/or classes to handle account l
     * Both the `TextPost` and `TextArtPost` classes extend abstract class `Post`, because they use the same data fields, `postTime` and `postAccount`, defined in `Post`.
     * The `TextPost` class should have a data field to store the text typed by a user.
     * The `TextArtPost` class should have a data field to store the text art chosen by a user. 
-    * Both the `TextPost` and `TextArtPost` classes override the `getFormattedContent()` method defined in interface `ContentFormatter`, which `Views.viewPost()` in the *Post View Window* calls to display each post in the appropriate format. 
+    * Both the `TextPost` and `TextArtPost` classes override the `getFormattedContent()` method defined in interface `ContentFormatter`, which `Views.postViewWindow()` in the *Post View Window* calls to display each post in the appropriate format. 
     * The following UML shows the relationships among `ContentFormatter`, `Post`, `TextPost`, `TextArtPost`, and `Account` classes. You are free to add more data fields and/or methods to `TextPost`, `TextArtPost`, and `Account` classes.
    
 <p align="center">
@@ -153,66 +151,16 @@ You are free to define and write more methods and/or classes to handle account l
  
     * The `Main` class uses a `HashMap` variable `accounts` to keep track of all account information. For each key-value pair, 
 the key is the account username, and the value is the corresponding account. For example, statement `accounts.put(userName, new Account(userName, password, phoneNumber))` adds a new account to `accounts`.
-    * The `Main` class uses an `ArrayList<Post>` variable `postList` to store all the posts, which is the argument of method `Views.viewPost()`. 
+    * The `Main` class uses an `ArrayList<Post>` variable `postList` to store all the posts, which is the argument of method `Views.postViewWindow()`. 
 
 
-## 4. Grading and Submitting Your Project
+## 4. Submitting and Grading Your Project
 
-### 4.1 Grading by LAs
+### 4.1 Submitting to Canvas
 
-#### 4.1.1 Required features (100 points)
+Submit the following zip file to Canvas (not Gradescope). 
 
-* (5 points) The `Account` class must have 3 (or more) private data fields: `private String userName`, `private String password`, and `private String phoneNumber` and the corresponding public getter methods, and correctly overrides the `getFormattedContent()` method. 
-
-* (5 points) Both the `TextPost` and `TextArtPost` classes correctly override the `getFormattedContent()` method.
-
-* (5 points) A `HashMap` variable `accounts` is used to keep track of all account information
-
-* (5 points) An `ArrayList<Post>` variable `postList` is used to store all the posts. 
-  
-* (10 points) A user can successfully create a new account (username=Alice, password=pass123), and then successfully log into the account.
-
-* (10 points) Alice can then successfully create a new text post and the *Post View Window* correctly shows the post in the appropriate format as demonstrated above.
-
-* (10 points) Alice can then successfully create a new text art post and the *Post View Window* correctly shows the post in the appropriate format as demonstrated above.
-
-* (10 points) The *Post View Window* correctly shows these two posts in the descending order of their times (i.e., from the latest post to the oldest post).
-
-* (10 points) When logging in using username=Bob (not created yet), it correctly reports a failed login.
-
-* (10 points) A user can successfully create another new account (username=Bob, password=pass456), and then successfully log into the account.
-
-* (10 points) Bob can then successfully create a new text post and a new text art post.
-
-* (10 points) The *Post View Window* correctly shows all the posts in the descending order of their times.
-
-#### 4.1.2 Bonus features (Additional points)
-
-* (Bonus 5 points) Please attend lab sessions for detailed grading criteria on comments and coding style.
-
-* (Bonus 20 points) There is a pre-registered Admin user with username `admin` and password `admin`. The Admin user can save all accounts (e.g., Alice and Bob) and all their posts to a text file (feel free to design your file format). After quitting and restarting the application, the Admin user can load the accounts and their posts from a file.
-
-* (Bonus 10 points) A user can delete the current account, which deletes the username, password, and all the user's posts.  
-
-* (Bonus 10 points) A user can choose how to sort the posts in the Post View Window. In addition to the default descending order of the time, a user can choose from the following additional orderings: ascending order of the time, ascending or descending order of usernames of the posts.  
-
-### 4.2 Submitting to Canvas
-
-Submit the following to Canvas (not Gradescope). Our LAs will manually grade them. You are welcome to demonstrate how your Jstgram works to our LAs, and they can then give you their feedback and grade your project.
-
-1. `Project1.jar`: Follow the instructions below to generate a runnable JAR file that the LAs can execute.
-   *  Step 1: Run your project at least once (create a `Launch Configuration` for step 4)
-   *  Step 2: Right-click your project, and select `Export ...`
-   *  Step 3: In the `Java` folder, select `Runnable JAR file`, then click `Next`
-   *  Step 4: In the `Runnable JAR File Specification` dialog
-       * select your project in `Launch Configuration`
-       * select `Package required libraries into generated JAR` for `Library handling`
-       * click the `Browse` button to choose the directory to save your JAR file, and change the filename to `Project1.jar`
-       * then click the `Finish` button
-       * then click the `Finish` button
-   * Type `java -jar Project1.jar` in the command line to test whether your JAR runs correctly.  
-
-2. `Project1.zip`:  Follow the instructions below to generate a ZIP file of all project source files that the LAs can read and check.
+`Project1.zip`:  Follow the instructions below to generate a ZIP file of all project source files that the LAs can read and check.
    *  Step 1: Right-click your project, and select `Export ...`
    *  Step 2: In the `General` folder, select `Archive File`, then click `Next`
    *  Step 3: In the `Export Archive File` dialog
@@ -221,11 +169,52 @@ Submit the following to Canvas (not Gradescope). Our LAs will manually grade the
        * click the `Browse` button to choose the directory to save your ZIP file, and change the filename to `Project1.zip`
        * then click the `Finish` button 
 
-Incomplete submissions (e.g., missing the JAR or ZIP file) will receive a zero point. 
+If you work with one other student, include both students' names in a comment at the top of `Main.java`. Each team member must submit `Project1.zip` separately to Canvas.
 
-Again, if you plan to work with one other student on this project, please sign
-up for a group on Canvas (`People` then `Groups`), and only one member of your group needs to
-submit your project on Canvas.
+### 4.2 Grading
+
+An LA will contact you to arrange an in-person grading meeting. You must bring your laptop with the project open in Eclipse. Before grading begins, the LA will verify that the source code on your laptop matches the version submitted to Canvas.
+
+The LA will grade only the submitted version, except for the live modifications specifically requested during the meeting. You must complete those modifications during the meeting without using AI tools, outside assistance, notes, or previously prepared alternative code.
+
+You will have up to a total of 20 minutes. Partial credit may be awarded based on your explanation and progress.
+
+If you work with one other student on this project, each of you will meet individually with the LA and possibly a different LA. Because the code explanation and live modifications are graded individually, team members may receive different scores.
+
+#### 4.2.1 Required features (100 points)
+
+* (5 points) Explain your source code to the  LA: The `Account` class must have 3 (or more) private data fields: `private String userName`, `private String password`, and `private String phoneNumber` and the corresponding public getter methods, and correctly overrides the `getFormattedContent()` method. 
+
+* (5 points) Explain your source code to the  LA: Both the `TextPost` and `TextArtPost` classes correctly override the `getFormattedContent()` method.
+
+* (5 points) Explain your source code to the  LA: A `HashMap` variable `accounts` is used to keep track of all account information
+
+* (5 points) Explain your source code to the  LA: An `ArrayList<Post>` variable `postList` is used to store all the posts. 
+  
+* (10 points) Demonstrate to the LA: A user can successfully create a new account (username=Alice, password=pass123), and then successfully log into the account.
+
+* (10 points) Demonstrate to the LA: Alice can then successfully create a new text post and the *Post View Window* correctly shows the post in the appropriate format as demonstrated above.
+
+* (10 points) Demonstrate to the LA: Alice can then successfully create a new text art post and the *Post View Window* correctly shows the post in the appropriate format as demonstrated above. The posts should be displayed in the descending order of their times (i.e., from the latest post to the oldest post).
+
+* (10 points) Demonstrate to the LA: When logging in using username=Bob (not created yet), it correctly reports a failed login.
+
+* (10 points) Demonstrate to the LA: A user can successfully create another new account (username=Bob, password=pass456), and then successfully log into the account.
+
+* (10 points) Demonstrate to the LA: Bob can then successfully create a new text post and a new text art post,  and the *Post View Window* correctly shows the post in the appropriate format as demonstrated above. Both Alice's and Bob's posts should be displayed. 
+
+* (10 points) Change your code and demonstrate to the LA: The *Post View Window* shows the posts in the ascending order of their times (i.e., from the  oldest post to the latest post), instead of the original descending order.
+
+* (10 points) Change your code and demonstrate to the LA: The *Post View Window* shows "New Post(N) or Logout(L) or Quit(Q)" instead of "New Post(+) or Logout(L) or Quit(Q)". Accordingly, a user types 'N' instead of '+' to create a new post.
+
+#### 4.2.2 Bonus features (Additional points)
+
+* (Bonus 5 points) Please attend lab sessions for detailed grading criteria on comments and coding style: Javadoc-style comments on methods; Class documentation that includes name, date made, and purpose of class; Variable names that match style (meaningful names and camelCase); Appropriate and consistent use of whitespace (mainly regarding proper use of indentation); Not having dead code (i.e., commented out unused code).
+
+* (Bonus 20 points) Demonstrate and explain your source code to the LA: There is a pre-registered Admin user with username `admin` and password `admin`. The Admin user can save all accounts (e.g., Alice and Bob) and all their posts to a text file (feel free to design your file format). After quitting and restarting the application, the Admin user can load the accounts and their posts from a file.
+
+* (Bonus 20 points) Demonstrate and explain your source code to the LA: A user can delete the current account, which deletes the username, password, and all the user's posts.  
+
 
 
 ## Credit
